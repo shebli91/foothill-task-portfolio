@@ -1,0 +1,256 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: rgb(183, 184, 187);
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+
+.logo:hover {
+  color: rgb(81, 112, 168);
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: rgb(81, 112, 168);
+}
+
+nav li {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  list-style-type: none;
+  float: left;
+}
+
+main {
+  background-color: rgb(231, 234, 243);
+}
+
+.about {
+  padding: 2em 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  padding: 0.5em;
+  font-size: 1.5rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #7d8499;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  color: #a5aec9;
+  font-size: 8em;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info {
+  text-align: center;
+}
+
+.projects .content {
+  margin-top: 30px;
+}
+
+.project-card {
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  background-color: #fff;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.5s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-info {
+  padding: 1em;
+}
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+footer {
+  background-color: rgb(183, 184, 187);
+  color: #000000;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span {
+  color: #374261;
+}
+
+footer h1 {
+  padding-top: 0.5em;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+footer li {
+  float: left;
+  margin-left: 1em;
+  font-size: 3em;
+}
+
+.info-card {
+  padding-left: 1em;
+  transition: 0.5s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top-btn {
+  font-size: 10em;
+  display: flex;
+  margin-top: 0.5em;
+  justify-content: center;
+}
